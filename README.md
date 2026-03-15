@@ -36,16 +36,44 @@
 ### Решение:
 
 - - - - - 
+```
+Инициализация Terraform
+1. terraform init
+
+Проверка конфигурации
+2. terraform validate
+
+Просмотр плана изменений
+3. terraform plan
+
+Применение плана
+4. terraform apply
+
+Проверка ресурсов через Terraform
+5. terraform state list
+
+Получить IP-адреса виртуальных машин
+6. terraform output
+
+Проверка ресурсов через Yandex CLI
+7. yc init
+
+Просмотр всех виртуальных машин
+8. yc compute instance list
+
+Подключение к public VM (bastion)
+9. ssh -i ~/.ssh/id_rsa_vm ubuntu@192.168.10.7
+
+Подключение к private VM через bastion (ProxyJump)
+10. ssh -i ~/.ssh/id_rsa_vm -J ubuntu@192.168.10.7 ubuntu@192.168.20.26
+
+Проверка интернет-доступа на private VM
+11. curl ifconfig.me
+12. ping 8.8.8.8
+    ping yandex.ru
 
 
-
-
-
-
-
-
-
-
+```
 
 ![1](https://github.com/Ivan-Shkutov/clopro_15.1/blob/main/img/1.png)
 
